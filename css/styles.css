@@ -2,12 +2,36 @@
   --text-main-color: #434455;
   --dark-bg-a-title: #2e2f42;
   --active-state-elem: #404bbf;
+  --main-white-bg: #ffffff;
 }
 
 body {
-  background-color: FFFFFF;
+  background-color: var(--main-white-bg);
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   color: #434455;
+}
+
+/* common */
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--dark-bg-a-title);
+}
+
+.section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-bg-a-title);
+}
+
+.section-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* header */
@@ -19,6 +43,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: #4d5ae5;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -32,16 +57,18 @@ body {
 }
 .nav-link {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-bg-a-title);
   text-decoration: none;
 }
 
+.nav-link.current {
+  color: var(--active-state-elem);
+}
+
 .address-link {
   font-style: normal;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark-bg-a-title);
@@ -61,19 +88,18 @@ body {
 }
 
 .hero-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--main-white-bg);
 }
 
 .hero .button {
+  font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--main-white-bg);
   background: #4d5ae5;
   cursor: pointer;
 }
@@ -88,29 +114,7 @@ body {
   list-style: none;
 }
 
-.benefits-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--dark-bg-a-title);
-}
-
-.benefits-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-
 /* what-are-we-doing */
-
-.work-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: var(--dark-bg-a-title);
-}
 
 .work-list {
   list-style: none;
@@ -122,34 +126,12 @@ body {
   background-color: #f4f4fd;
 }
 
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: var(--dark-bg-a-title);
-}
-
-.team-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--dark-bg-a-title);
-}
-
 .team-list {
   list-style: none;
 }
 
 .teammate {
-  background: #ffffff;
-}
-
-.team-prof {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  background: var(--main-white-bg);
 }
 
 /* footer */
@@ -159,7 +141,6 @@ body {
 }
 
 .footer-text {
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
@@ -175,8 +156,8 @@ body {
 }
 
 .filter .button {
+  font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #4d5ae5;
@@ -186,24 +167,10 @@ body {
 
 .filter .button:hover,
 .filter .button:focus {
-  color: #ffffff;
+  color: var(--main-white-bg);
   background: var(--active-state-elem);
 }
 
 .projects {
   list-style: none;
-}
-
-.projects-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--dark-bg-a-title);
-}
-
-.projects-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
